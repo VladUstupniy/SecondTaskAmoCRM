@@ -1,0 +1,198 @@
+.main-wrapper {
+    position: relative;
+    padding: 40px 0px 0px 0px;
+}
+.main {
+    position: relative;
+    display: block;
+    justify-content: space-between;
+    margin-bottom: 60px;
+
+    @media(min-width:1200px) {
+        display: flex;
+        margin-bottom: 70px;
+    }
+    
+    z-index: 2;
+}
+.main__preview {
+    margin-bottom: 45px;
+
+    @media (min-width: 1200px) {
+        flex: 50%;
+        margin-bottom: 0;
+    }
+}
+.preview__title {
+    width: 100%;
+    font-weight: 400;
+    font-size: 36px;
+    line-height: 44px;
+    color: #E4E5EA;
+    margin-bottom: 15px;
+
+    span {
+        font-weight: 900;
+        background: linear-gradient(92deg, #FCB045 27.14%, #FF3F78 121.36%), #E4E5EA;
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        background-clip: text;
+        text-fill-color: transparent;
+    }
+
+    @media(min-width:1200px) {
+        font-size: 48px;
+        line-height: 58px;
+        margin-bottom: 30px;
+        width: 362px;
+    }
+}
+.preview__text {
+    width: 100%;
+    font-family: 'Montserrat', sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 22px;
+    color: #E4E5EA;
+
+    @media (min-width: 1200px) {
+        width: 275px;
+    }
+}
+.main__description {
+    flex: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: end;
+
+    @media (min-width: 1200px) {
+        flex: 30%;
+    }
+}
+.description__title {
+    text-align: left;
+    width: 100%;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 22px;
+    color: #E4E5EA;
+    margin-bottom: 20px;
+
+    @media (min-width: 1200px) {
+        width: 270px;
+        text-align: right;
+        margin-bottom: 40px;
+    }
+}
+.description__span {
+    font-weight: 700;
+
+    @media (min-width: 1200px) {
+        text-transform: uppercase;
+    }
+}
+.description__span--first {
+    background: linear-gradient(90deg, #FCB045 36.99%, #FD1D1D 100%), #E4E5EA;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    text-fill-color: transparent;
+}
+.description__span--second {
+    background: linear-gradient(90deg, #FCB045 59%, #fd651d 100%),
+                linear-gradient(0deg, #E4E5EA, #E4E5EA);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    text-fill-color: transparent;
+}
+.description__specs {
+    margin: 0px -15px 60px -15px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: start;
+
+    @media (min-width: 1200px) {
+        justify-content: end;
+        margin: 0px -15px 30px -15px;
+    }
+}
+.spec__item {
+    width: 50%;
+
+    @media (min-width: 1200px) {
+        width: 165px;
+        padding: 15px;
+    }
+}
+.spec__title {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 400;
+    font-size: 13px;
+    line-height: 16px;
+    letter-spacing: 0.05em;
+    color: #E4E5EA;
+    position: relative;
+    margin-bottom: 6px;
+    text-align: left;
+    text-transform: uppercase;
+    padding: 0px 0px 0px 35px;
+    margin-bottom: 14px;
+
+    &::before{
+        position: absolute;
+        content: '';
+        display: block;
+        width: 10px;
+        height: 1px;
+        top: 9px;
+        left: 20px;
+        background: linear-gradient(90deg, #FCB045 36.99%, #FD1D1D 100%), #E4E5EA;
+    }
+
+    @media (min-width: 1200px) {
+        font-family: 'inter', sans-serif;
+        font-size: 18px;
+        line-height: 22px;
+        font-weight: 500;
+        letter-spacing: 5%;
+        text-align: right;
+        margin-bottom: 0;
+        padding: 0;
+        &::before {
+            display: none;
+        }
+    }
+}
+.spec__text {
+    display: none;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 20px;
+    text-align: right;
+
+    @media (min-width: 1200px) {
+        display: block;
+    }
+}
+.description__button {
+    display: none;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 19px;
+    text-align: center;
+    color: #E4E5EA;
+    padding: 21px 35px;
+    background: #4077F3;
+
+    &:hover {
+        background: #265bd6;
+    }
+
+    @media (min-width: 1200px) {
+        display: block;
+    }
+}
